@@ -1,0 +1,20 @@
+# Frontend
+hospital-frontend/node_modules/
+hospital-frontend/dist/
+hospital-frontend/.env
+
+# Backend
+HospitalManagementSystem/target/
+HospitalManagementSystem/.classpath
+HospitalManagementSystem/.project
+HospitalManagementSystem/.settings/
+HospitalManagementSystem/.mvn/
+HospitalManagementSystem/mvnw
+HospitalManagementSystem/mvnw.cmd
+
+# IDEs & OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

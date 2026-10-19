@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://hospital.com/reports"
+    xmlns:tns="http://hospital.com/reports"
+    elementFormDefault="qualified">
+
+    <!-- ============================================== -->
+    <!-- REPORT 1: Patient Report                      -->
+    <!-- ============================================== -->
+    <xs:element name="getPatientReportRequest">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getPatientReportResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="totalPatients" type="xs:long"/>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ============================================== -->
+    <!-- REPORT 2: Appointment Report                  -->
+    <!-- ============================================== -->
+    <xs:element name="getAppointmentReportRequest">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getAppointmentReportResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="totalAppointments" type="xs:long"/>
+                <xs:element name="scheduled" type="xs:long"/>
+                <xs:element name="completed" type="xs:long"/>
+                <xs:element name="cancelled" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ============================================== -->
+    <!-- REPORT 3: Medical Record Report               -->
+    <!-- ============================================== -->
+    <xs:element name="getMedicalRecordReportRequest">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getMedicalRecordReportResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="totalMedicalRecords" type="xs:long"/>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
